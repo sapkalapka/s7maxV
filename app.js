@@ -1,22 +1,24 @@
 let playVideo = document.getElementById('play-video')
 let video = document.getElementById('video')
 
-document.querySelectorAll('.content').forEach((content) => {
-  let observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1'
-        }
-      })
-    },
-    {
-      threshold: 0.3,
-      rootMargin: '0px',
-    }
-  )
-  observer.observe(content)
-})
+window.onload = () => {
+  document.querySelectorAll('.content').forEach((content) => {
+    let observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1'
+          }
+        })
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '0px',
+      }
+    )
+    observer.observe(content)
+  })
+}
 
 new Swiper('.swiper', {
   loop: true,

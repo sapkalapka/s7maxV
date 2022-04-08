@@ -10,7 +10,7 @@
     @apply relative;
   }
   .content {
-    @apply m-auto grid p-2 text-white transition-opacity duration-300 w-10/12 lg:w-8/12;
+    @apply m-auto grid p-2 text-white transition-opacity opacity-0 duration-300 w-10/12 lg:w-8/12;
   }
   .swiper {
     @apply w-full;
