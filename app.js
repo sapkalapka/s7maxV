@@ -19,8 +19,25 @@ document.querySelectorAll('.content').forEach((content) => {
 })
 
 new Swiper('.swiper', {
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   slidesPerView: 2,
   spaceBetween: 60,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+})
+new Swiper('.swiper2', {
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply select-none text-[0.5rem] leading-[0.9rem];
+  }
+  section {
+    @apply relative;
+  }
+  .content {
+    @apply m-auto grid p-2 text-white transition-opacity duration-300 w-10/12 lg:w-8/12;
+  }
+  .swiper {
+    @apply w-full;
+  }
+  .swiper2 {
+    @apply h-[500px] w-3/6 overflow-hidden mx-auto;
+  }
+  .swiper2 img {
+    @apply h-full w-auto;
+  }
+}
